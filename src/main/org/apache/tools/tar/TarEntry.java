@@ -367,7 +367,7 @@ public class TarEntry implements TarConstants {
      * @param desc Entry to be checked as a descendant of this.
      * @return True if entry is a descendant of this.
      */
-    public boolean isDescendent(TarEntry desc) {
+    public boolean isDescendant(TarEntry desc) {
         return desc.getName().startsWith(getName());
     }
 

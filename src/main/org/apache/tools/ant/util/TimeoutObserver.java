@@ -33,5 +33,5 @@ public interface TimeoutObserver {
      *
      * @param w the watchdog that timed out.
      */
-    void timeoutOccured(Watchdog w);
+    void timeoutOccurred(Watchdog w);
 }

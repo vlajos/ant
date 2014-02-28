@@ -77,10 +77,10 @@ public class Watchdog implements Runnable {
      * Inform the observers that a timeout has occurred.
      * This happens in the watchdog thread.
      */
-    protected final void fireTimeoutOccured() {
+    protected final void fireTimeoutOccurred() {
         Enumeration e = observers.elements();
         while (e.hasMoreElements()) {
-            ((TimeoutObserver) e.nextElement()).timeoutOccured(this);
+            ((TimeoutObserver) e.nextElement()).timeoutOccurred(this);
         }
     }
 
@@ -121,7 +121,7 @@ public class Watchdog implements Runnable {
             // Ignore exception
         }
         if (!stopped) {
-            fireTimeoutOccured();
+            fireTimeoutOccurred();
         }
     }
 

@@ -237,7 +237,7 @@ public class ExecuteJava implements Runnable, TimeoutObserver {
      * @param w the responsible Watchdog.
      * @since Ant 1.5
      */
-    public synchronized void timeoutOccured(Watchdog w) {
+    public synchronized void timeoutOccurred(Watchdog w) {
         if (thread != null) {
             timedOut = true;
             thread.interrupt();

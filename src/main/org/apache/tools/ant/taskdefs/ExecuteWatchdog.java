@@ -112,7 +112,7 @@ public class ExecuteWatchdog implements TimeoutObserver {
      * This can be called in the watchdog thread
      * @param w the watchdog
      */
-    public synchronized void timeoutOccured(Watchdog w) {
+    public synchronized void timeoutOccurred(Watchdog w) {
         try {
             try {
                 // We must check if the process was not stopped

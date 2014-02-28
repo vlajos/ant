@@ -18,7 +18,7 @@
 package org.apache.tools.ant.taskdefs.optional.extension;
 
 /**
- * Enum used in (@link Extension) to indicate the compatability
+ * Enum used in (@link Extension) to indicate the compatibility
  * of one extension to another. See (@link Extension) for instances
  * of object.
  *
@@ -31,25 +31,25 @@ package org.apache.tools.ant.taskdefs.optional.extension;
  *
  * @see Extension
  */
-public final class Compatability {
+public final class Compatibility {
     /**
-     * A string representaiton of compatability level.
+     * A string representation of compatibility level.
      */
     private final String name;
 
     /**
-     * Create a compatability enum with specified name.
+     * Create a compatibility enum with specified name.
      *
-     * @param name the name of compatability level
+     * @param name the name of compatibility level
      */
-    Compatability(final String name) {
+    Compatibility(final String name) {
         this.name = name;
     }
 
     /**
-     * Return name of compatability level.
+     * Return name of compatibility level.
      *
-     * @return the name of compatability level
+     * @return the name of compatibility level
      */
     public String toString() {
         return name;
